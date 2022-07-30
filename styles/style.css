@@ -1,11 +1,10 @@
 html {
-    font-size:15px;
-    font-family:'Open Sans',sans-serif;
     background-color: bisque;
 }
 body {
     width:  600px;
     margin: 0 auto;
+    margin-top: 1%;
     background-color: coral;
     padding: 0 20px 20px 20px;
     border: 5px solid black;
@@ -35,6 +34,32 @@ figcaption {
 }
 .popular {
     border: dotted 4px red;
+}
+.topnav {
+    overflow: hidden;
+    background-color: coral;
+}
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.topnav a:hover {
+    background-color: bisque;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: chocolate;
+    color: white;
+}
+
+.topnav-right {
+    float: right;
 }
 @media only screen and (max-width : 1024px) {
     p,li {
