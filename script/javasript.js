@@ -1,4 +1,6 @@
-let primenumber = "";
+let primenumber = " ";
+let numtrue = 0;
+const arrnumber = [];
 var number = prompt("Enter a positive integer");
 
 while (number < 0 || Math.ceil(number) != this.number|| isNaN(number)) { 
@@ -8,9 +10,10 @@ showPrimes(number);
 function showPrimes(n) {
     for (let i = 2; i < n; i++) {
         if (!isPrime(i)) continue;
-        primenumber += " " + i;
+        arrnumber[numtrue] = " " + String(i);
+        numtrue++
     }
-    alert("For n = "+ n +" prime numbers are" + primenumber); //a prime
+    alert("For n = "+ n +" prime numbers are" + arrnumber); //a prime
 }
 
 function isPrime(n) {
