@@ -79,11 +79,11 @@ body {
 }
 
 #container {
-  width: 50%; /* Adjust the width as needed */
-  margin: 20px auto 0; /* This centers the element horizontally */
-  text-align: center; /* This centers the content within the container */
-  background-color: #dbedff; /* Change the background color if necessary */
-  padding: 20px; /* Add some padding for spacing */
+  width: 50%;
+  margin: 20px auto 0; 
+  text-align: center; 
+  background-color: #dbedff; 
+  padding: 20px; 
 }
 
 .custom-upload-button {
@@ -109,13 +109,6 @@ body {
   color: #4f80c0;
 }
 
-.result {
-    margin-top: 20px;
-    font-size: 20px;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
-    color: #4f80c0;
-  }
 #label-container {
   font-family: "Courier New", Courier, monospace;
   font-size: medium;
@@ -127,8 +120,9 @@ body {
 #img-display {
   max-width: 100%;
   max-height: 100%;
-  display: none; /* Hide the image by default */
+  display: none;
 }
+
 </style>
 </head>
 <body>
@@ -146,11 +140,8 @@ body {
   </div> 
   <a style="float:right" href="contact.html">Contact</a>
 </div>
-
 <div id="container">
-  <!-- ส่วนบนสุดของหน้าเว็บ (หัวเพจ) -->
   <div id="top-of-page"></div>
-
   <div>
     <h1>
       <span class="OYPEnA text-decoration-none text-strikethrough-none" style="color: #4f80c0;">
@@ -158,8 +149,8 @@ body {
       </span>
     </h1>
   </div>
-  <div class="head_txt">Webcam</div>
-  <div id="webcam-container"></div>
+  <div class="head_txt">Camera</div>
+  <div id="camera-container"></div>
   <div class="head_txt">ภาพที่อัพโหลด</div>
   <div><img id="imagePreview" style="height: 200px" /></div>
   <div>
@@ -168,17 +159,14 @@ body {
       id="capture-button"
       class="custom-upload-button"
     >
-      Webcam
+      Capture
     </button>
     <input id="imageUpload" type="file" style="display: none" />
     <button id="uploadButton" class="custom-upload-button">
       Image
     </button>
-    <button id="Clear-Results" class="custom-upload-button">
-      Clear
-    </button>
   </div>
-  <div id="result" class="result">Result</div>
+  <div class="result"></div>
   <div id="label-container"></div>
   <img id="img-display"></img>
 <script src="/ai/script-ai.js"></script>
